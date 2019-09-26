@@ -1,9 +1,9 @@
 # Site settings | 网站设置
 title: Jaylen Cheng
-SEOTitle: JaylenCheng的博客 | Jaylen Chneg
+SEOTitle: 欢迎访问JaylenCheng的主页 | Jaylen Chneg
 header-img: img/home-bg-he.png
 email: jaylencheng@outlook.com
-description: "Jaylen Cheng的博客"
+description: "欢迎访问Jaylen Cheng的主页"
 keyword: "Jaylen Chneg, Jaylen Cheng的博客, jaylen cheng, jaylencheng, Python blog, Information Theory"
 url: "http://jaylencheng.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
