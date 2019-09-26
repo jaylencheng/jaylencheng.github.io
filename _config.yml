@@ -104,3 +104,5 @@ friends: [
         href: "https://legacy.gitbook.com/@rainbomsea"
     }
 ]
+
+theme: jekyll-theme-leap-day
