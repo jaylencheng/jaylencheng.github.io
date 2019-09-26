@@ -1,29 +1,29 @@
 # Site settings | 网站设置
-title: RainbomSea
-SEOTitle: RainbomSea的博客 | RaimbomSea
+title: Jaylen Cheng
+SEOTitle: JaylenCheng的博客 | Jaylen Chneg
 header-img: img/home-bg-he.png
-email: RainbomSea@qq.com
-description: "RainbomSea的博客"
-keyword: "RainbomSea, RainbomSea的博客, rainbom sea, rainbomsea, Python blog"
-url: "http://RainbomSea.github.io"          # your host, for absolute URL
+email: jaylencheng@outlook.com
+description: "Jaylen Cheng的博客"
+keyword: "Jaylen Chneg, Jaylen Cheng的博客, jaylen cheng, jaylencheng, Python blog, Information Theory"
+url: "http://jaylencheng.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/RainbomSea/RainbomSea.github.io.git" #code repository | 代码仓库
+github_repo: "https://github.com/jaylencheng/jaylencheng.github.io.git" #code repository | 代码仓库
 
 
 # Sidebar settings | 侧边栏设置
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "就算这样,也要笑着去努力啊!"
-sidebar-avatar: /img/head.jpg      # 头像
+sidebar-about-description: "自律，沉稳，而后爱人。"
+sidebar-avatar: /img/1.jpg      # 头像
 
 
 
 
 
 # SNS settings | 社交网络设置
-facebook_username: rainbom.z
-github_username: RainbomSea
-zhihu_username: RainbomSea
-csdn_username: qq_39268193
+facebook_username: HelloCata
+github_username: jaylencheng
+zhihu_username: Cata
+csdn_username: qq_40090859
 
 
 
@@ -61,11 +61,11 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    # 是否开启Gitalk评论
-  clientID: 99ecf1fdc9b7e357ebb7                            #生成的clientID
-  clientSecret: a866f00709e418ffd35d9986e130ff7f01a3cba2    #生成的clientSecret
-  repo: RainbomSea.github.io    #仓库名称
-  owner: RainbomSea    # github用户名
-  admin: RainbomSea
+  clientID: 09b08ef8f8e0e96b82d8                            #生成的clientID
+  clientSecret: 6c8f412d3ad810b8d7f4f4bd6294293208f86213    #生成的clientSecret
+  repo: jaylencheng.github.io    #仓库名称
+  owner: jaylencheng    # github用户名
+  admin: jaylencheng
   distractionFreeMode: true # 是否启用类似FB的阴影遮罩
 
 
@@ -91,16 +91,16 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "GitHub·RainbomSea",
-        href: "http://RainbomSea.github.io"
+        title: "GitHub·JaylenCheng",
+        href: "http://jaylencheng.github.io"
     },{
-        title: "CSDN·RainbomSea",
-        href: "https://blog.csdn.net/qq_39268193"
+        title: "CSDN·HelloCata",
+        href: "https://blog.csdn.net/qq_40090859"
     },{
-        title: "知乎·RainbomSea",
-        href: "https://www.zhihu.com/people/RainbomSea"
+        title: "知乎·Cata",
+        href: "https://www.zhihu.com/people/cata-93/activities"
     },{
         title: "GitBook·RainbomSea",
-        href: "https://legacy.gitbook.com/@rainbomsea"
+        href: "https://legacy.gitbook.com/@jaylencheng"
     }
 ]

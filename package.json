@@ -1,14 +1,14 @@
 {
-    "name": "RainbomSea",
-    "title": "RainbomSea",
-    "author": "BY <RainbomSea@qq.com>",
+    "name": "jaylencheng",
+    "title": "JaylenCheng",
+    "author": "BY <jaylencheng@outlook.com>",
     "version": "1.1.0",
-    "homepage": "http://RainbomSea.github.io",
+    "homepage": "http://jaylencheng.github.io",
     "repository": {
         "type": "git",
-        "url": "https://github.com/RainbomSea/RainbomSea.github.io"
+        "url": "https://github.com/jaylencheng/jaylencheng.github.io"
     },
-    "bugs": "https://github.com/RainbomSea/RainbomSea.github.io/issues",
+    "bugs": "https://github.com/jaylencheng/jaylencheng.github.io/issues",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",
