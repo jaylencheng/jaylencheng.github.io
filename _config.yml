@@ -25,7 +25,9 @@ github_username: jaylencheng
 zhihu_username: cata
 csdn_username: qq_40090859
 jianshu_username: 46fc0990aa03
-
+wangyiyun_username: 481192720
+vs_username: chengjiale
+qq_username: 2487548428
 
 
 
@@ -106,6 +108,12 @@ friends: [
     },{
         title: "QQ·2487548428",
         href: "https://user.qzone.qq.com/2487548428/infocenter"
+    },{
+        title: "网易云·Morning_Cata",
+        href: "https://music.163.com/#/user/home?id=481192720"
+    },{
+        title: "Visual Studio·CJL",
+        href: "https://chengjiale.visualstudio.com/"
     },{
         title: "GitBook·JalenCheng",
         href: "https://legacy.gitbook.com/@jaylencheng"

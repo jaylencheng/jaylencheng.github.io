@@ -136,7 +136,43 @@ layout: default
 										</span>
 									</a>
 								</li>
-							{% endif %}			
+							{% endif %}
+							
+		                    <!-- add Wang YiYun  -->
+							{% if site.wangyiyun_username %}
+								<li>
+									<a target="_blank" href="https://music.163.com/#/user/home?id={{ site.wangyiyun_username }}">
+										<span class="fa-stack fa-lg">
+											<i class="fa fa-circle fa-stack-2x"></i>
+											<i class="fa fa-stack-1x fa-inverse">云</i>
+										</span>
+									</a>
+								</li>
+							{% endif %}
+		
+							<!-- add Visual Studio Page  -->
+							{% if site.vs_username %}
+								<li>
+									<a target="_blank" href="https://{{ site.vs_username }}.visualstudio.com/">
+										<span class="fa-stack fa-lg">
+											<i class="fa fa-circle fa-stack-2x"></i>
+											<i class="fa fa-stack-1x fa-inverse">VS</i>
+										</span>
+									</a>
+								</li>
+							{% endif %}
+	
+							<!-- add QQ  -->
+							{% if site.qq_username %}
+								<li>
+									<a target="_blank" href="https://user.qzone.qq.com/{{ site.wangyiyun_username }}/infocenter">
+										<span class="fa-stack fa-lg">
+											<i class="fa fa-circle fa-stack-2x"></i>
+											<i class="fa fa-stack-1x fa-inverse">Q</i>
+										</span>
+									</a>
+								</li>
+							{% endif %}
 
 							<!-- add FaceBook -->
 							{% if site.facebook_username %}
