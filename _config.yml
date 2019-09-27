@@ -24,6 +24,7 @@ facebook_username: HelloCata
 github_username: jaylencheng
 zhihu_username: cata
 csdn_username: qq_40090859
+jianshu_username: 46fc0990aa03
 
 
 
@@ -73,7 +74,7 @@ gitalk:
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 9acee03023ad0c6c993dd86df81e2ac8
+ba_track_id: a24de710523149cee679f3885c4807d6
 
 
 # Featured Tags
@@ -99,6 +100,12 @@ friends: [
     },{
         title: "知乎·Cata",
         href: "https://www.zhihu.com/people/cata-93/activities"
+    },{
+        title: "简书·Dear_Cata",
+        href: "https://www.jianshu.com/u/46fc0990aa03"
+    },{
+        title: "QQ·2487548428",
+        href: "https://user.qzone.qq.com/2487548428/infocenter"
     },{
         title: "GitBook·RainbomSea",
         href: "https://legacy.gitbook.com/@jaylencheng"
