@@ -3,7 +3,9 @@
 header-img: img/post-web.jpg    #这篇文章标题背景图片
 catalog: true                       # 是否归档
 tags:                               #标签
-    - 软件无线电SDR
+	- 信息与通信
+	- 通信系统
+	- 软件无线电SDR
 ---
 
 @[TOC](软件无线电SDR应用（1）MATLAB信号产生)
