@@ -7,7 +7,7 @@ tags:                               #标签
 ---
 # About Me
 ## 我的名片
-![1](https://raw.githubusercontent.com/jaylencheng/blogimages/master/19-1-1-1.png)
+![1](https://img-blog.csdnimg.cn/20191117150627182.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMDkwODU5,size_16,color_FFFFFF,t_70)
 ## 影响我的句子
 1. 也许是天生懦弱的关系，我对所有的喜悦都掺杂着不祥的预感。-——三岛由纪夫
 2. 请您用绝对的理智和清醒的头脑去压制住心里的爱和难过。站在未来的高点去否定当下没意义的事。
