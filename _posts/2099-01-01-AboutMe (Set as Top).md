@@ -1,6 +1,6 @@
 ---
 subtitle:   关于我自己，关于这个博客，关于我的博文. #副标题
-header-img: img/post2.jpg    #这篇文章标题背景图片
+header-img: img/post3.jpg    #这篇文章标题背景图片
 catalog: true                       # 是否归档
 tags:                               #标签
     - 关于Jaylen Cheng
