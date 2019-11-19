@@ -92,7 +92,7 @@ layout: default
 					<h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
 					<div class="short-about">
 						{% if site.sidebar-avatar %}
-							<a href="{{ site.baseurl }}/about">
+							<a href="{{ site.baseurl }}/2099/01/01/About-Me-(Set-As-Top)/">
 								<img src="{{site.sidebar-avatar}}" />
 							</a>
 						{% endif %}
@@ -200,7 +200,10 @@ layout: default
 
 						</ul>
 						{% if site.email %}
-							<p>✉️ {{site.email}}</p>
+						<li>
+							<a href="mailto:jaylencheng@outlook.com jaylencheng@ieee.org">✉️ {{site.email}}</a>
+						</li>
+						<!--  <p>✉️ {{site.email}}</p> -->
 						{% endif %}
 					</div>
 				</section>
