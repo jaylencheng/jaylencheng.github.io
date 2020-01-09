@@ -91,6 +91,15 @@ layout: default
 					<hr>
 					<h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
 					<div class="short-about">
+					</div>
+				</section>
+				<!-- Short APP -->
+				<section class="visible-md visible-lg">
+					<hr>
+					<h5><a href="{{'/about/' | prepend: site.baseurl }}">APPS</a></h5>
+					<div class="short-about">
+					</div>
+				</section>
 						{% if site.sidebar-avatar %}
 							<a href="{{ site.baseurl }}/2099/01/01/About-Me-(Set-As-Top)/">
 								<img src="{{site.sidebar-avatar}}" />
@@ -205,8 +214,7 @@ layout: default
 						</li>
 						<!--  <p>✉️ {{site.email}}</p> -->
 						{% endif %}
-					</div>
-				</section>
+
 				<!-- Friends Blog -->
 				{% if site.friends %}
 					<hr>
