@@ -25,6 +25,17 @@ tags:                               #标签
 3. [ABOUT](http://jaylencheng.github.io/about/)中是自己发现的一些对平时学习有帮助的网站，包括国内外大神的博客网站，有用的慕课地址，以及实用的小程序网站，等等
 4. [TAGS](http://jaylencheng.github.io/tags)中是自己写的博客的归类，读者可以通过标签来查看我发表的关于这一领域的所有内容，以避免繁琐的查找。
 
+
+# 关于本网页对应的App
+目前开发了安卓端app，下载链接如下：
+1. 稳定版（可以正常使用的版本，体积较小，推荐）：目前版本号2.0.4
+下载链接：https://share.weiyun.com/6Ds7tXsi
+或者扫描二维码 [Code](img/safecode.png)
+2. 测试版（Beta版）（做开发或者新功能的版本，体积较大，各种新的插件会优先在本版中出现，但也可能容易出bug）：目前版本号1.0.1
+下载链接：https://share.weiyun.com/l983XeaV
+或者扫描二维码 [Code](img/betacode.png)
+现存安卓版本中，为了在手机屏幕上尽量多的显示内容，博客浏览的目录插件被阉割，栏目以小任务栏的形式出现在右上角。App小米商城上架审核中，敬请期待。
+
 # 版权声明
 本站所有未注明出处的文章即原创文章，遵循 [CC 4.0 BY-SA](http://creativecommons.org/licenses/by-sa/4.0/) 版权协议.
 
