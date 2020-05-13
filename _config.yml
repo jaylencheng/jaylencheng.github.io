@@ -12,7 +12,7 @@ github_repo: "https://github.com/jaylencheng/jaylencheng.github.io.git" #code re
 
 # Sidebar settings | 侧边栏设置
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "自律，沉稳，而后爱人。"
+sidebar-about-description: "梦想在一点点、一点点地接近"
 sidebar-avatar: /img/1.jpg      # 头像
 
 
