@@ -25,7 +25,7 @@ tags:                               #标签
 3. [ABOUT](http://jaylencheng.github.io/about/)中是自己发现的一些对平时学习有帮助的网站，包括国内外大神的博客网站，有用的慕课地址，以及实用的小程序网站，等等
 4. [TAGS](http://jaylencheng.github.io/tags)中是自己写的博客的归类，读者可以通过标签来查看我发表的关于这一领域的所有内容，以避免繁琐的查找。
 
-# 本站实用技巧
+# 本站部分食用方式
 1. 本站为开源网站，网站项目的代码见[Cata的项目地址](https://github.com/jaylencheng/jaylencheng.github.io)。项目的代码允许任意形式的转载，引用，修改，而不必注明来源。而博客内容为原创内容，见本页[版权声明](https://jaylencheng.github.io/2099/01/01/About-Me-(Set-As-Top)/#%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8E)处进行必要标注。
 2. 本站中使用MathJax中的kramdown进行公式渲染，可在公式处右键查看公式内容，改变大小和语言，提取公式对应的html和latex代码等。
 3. 本站中的图床基于[CSDN](https://img-blog.csdnimg.cn/)和[GitHub图床](https://raw.githubusercontent.com/),后者在国内可能出现无法打开或打开较慢的情况，科学上网后可减轻此现象出现的频率。(因此，本站今后也尽量将图床移至站内，减少此类现象发生的可能。)
