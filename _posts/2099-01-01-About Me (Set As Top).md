@@ -26,7 +26,7 @@ tags:                               #标签
 4. [TAGS](http://jaylencheng.github.io/tags)中是自己写的博客的归类，读者可以通过标签来查看我发表的关于这一领域的所有内容，以避免繁琐的查找。
 
 
-# 关于本网页对应的App
+# 安卓端App
 目前开发了安卓端app，下载链接如下：
 1. 稳定版（可以正常使用的版本，体积较小，推荐）：目前版本号2.0.4
 下载链接：https://share.weiyun.com/6Ds7tXsi
