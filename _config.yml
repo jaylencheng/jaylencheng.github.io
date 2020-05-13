@@ -1,10 +1,10 @@
 # Site settings | 网站设置
-title: Jaylen Cheng
-SEOTitle: 欢迎访问JaylenCheng的主页 | Jaylen Chneg
+title: Cata
+SEOTitle: 欢迎访问Cata的主页 | Cata
 header-img: img/home-bg-he.png
 email: jaylencheng@outlook.com  jaylencheng@ieee.org
-description: "欢迎访问Jaylen Cheng的主页"
-keyword: "Jaylen Chneg, Jaylen Cheng的博客, jaylen cheng, jaylencheng, Python blog, Information Theory"
+description: "欢迎访问Cata的主页"
+keyword: "Cata, Cata的博客, cata, Python blog, Information Theory"
 url: "http://jaylencheng.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/jaylencheng/jaylencheng.github.io.git" #code repository | 代码仓库
@@ -115,7 +115,7 @@ friends: [
         title: "Visual Studio·CJL",
         href: "https://chengjiale.visualstudio.com/"
     },{
-        title: "GitBook·JalenCheng",
+        title: "GitBook·Cata",
         href: "https://legacy.gitbook.com/@jaylencheng"
     }
 ]
