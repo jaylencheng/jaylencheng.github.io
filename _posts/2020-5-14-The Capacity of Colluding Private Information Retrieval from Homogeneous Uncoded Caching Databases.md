@@ -91,7 +91,7 @@ $$
 	\Leftrightarrow & I(A_1^1;A_3^1|Z_2,W_1)=0
 \end{align}$$
 
-# 3.System Model}
+# 3.System Model
 
 $$
 \begin{equation}
