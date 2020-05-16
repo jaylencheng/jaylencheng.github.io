@@ -29,7 +29,7 @@ tags:                               #标签
 3. 本站中的图床基于[CSDN](https://img-blog.csdnimg.cn/)和[GitHub图床](https://raw.githubusercontent.com/),后者在国内可能出现无法打开或打开较慢的情况，科学上网后可减轻此现象出现的频率。(因此，本站今后也尽量将图床移至站内，减少此类现象发生的可能。)
 4. 本站仍有博主在其他平台的链接，在主页面侧边栏介绍或每页最底下会有其他链接，希望能发掘更多的共同兴趣。
 5. 对本站的建议、对内容的理解和质疑欢迎在每篇博文下方留言（需要GitHub账号），或者点击主页中的邮箱，自动弹出邮件，直接写给我。
-6. 开发日志见[开发日志](https://github.com/jaylencheng/jaylencheng.github.io)。
+6. 开发日志见[开发日志](https://jaylencheng.github.io/Mybooks/Update-Logs/)。
 6. 本站为本人兴趣使然的非盈利网站，不接任何广告或宣传，暂不考虑以本站为由接受任何形式的打赏和捐赠。总而言之，自己曾收到的帮助、所有阅读者的支持、自己想要写东西的欲望以及希望分享的心情促成了这个网站。喜欢本站可以到[Github](https://github.com/jaylencheng/jaylencheng.github.io)处点一颗star，我会十分开心
 
 # 安卓端App
