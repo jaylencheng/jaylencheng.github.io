@@ -33,19 +33,19 @@ tags:                               #标签
 
 # 安卓端App
 目前开发了安卓端app，下载链接如下：
-1. 稳定版（可以正常使用的版本，体积较小，推荐）：目前版本号2.0.4
+> 稳定版（可以正常使用的版本，体积较小，推荐）：目前版本号2.0.4
 
 下载链接：[https://share.weiyun.com/6Ds7tXsi](https://share.weiyun.com/6Ds7tXsi)
 
 或者扫描二维码 ![Code]({{ site.baseurl }}/img/safecode.png)
 
-2. HD版（供安卓平板使用，手机使用会一直横屏）：版本号2.0.4
+> HD版（供安卓平板使用，手机使用会一直横屏）：版本号2.0.4
 
 下载链接：[https://share.weiyun.com/sfaxcpDt](https://share.weiyun.com/sfaxcpDt)
 
 或者扫描二维码 ![Code]({{ site.baseurl }}/img/hdcode.png)
 
-3. 测试版（Beta版）（做开发或者新功能的版本，体积较大，各种新的插件会优先在本版中出现，但也可能容易出bug）：目前版本号1.0.1
+> 测试版（Beta版）（做开发或者新功能的版本，体积较大，各种新的插件会优先在本版中出现，但也可能容易出bug）：目前版本号1.0.1
 
 下载链接：[https://share.weiyun.com/l983XeaV](https://share.weiyun.com/l983XeaV)
 
