@@ -23,7 +23,7 @@ tags:                               #标签
 4. [TAGS](http://jaylencheng.github.io/tags)中是自己写的博客的归类，读者可以通过标签来查看我发表的关于这一领域的所有内容，以避免繁琐的查找。
 
 # 本站部分食用方式
-1. 本站为开源网站，网站项目的代码见[Cata的项目地址](https://github.com/jaylencheng/jaylencheng.github.io)。项目的代码允许任意形式的转载，引用，修改，而不必注明来源。而博客内容为原创内容，见本页[版权声明](https://jaylencheng.github.io/2099/01/01/About-Me-(Set-As-Top)/#%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8E)处进行必要标注。
+1. 本站为开源网站，网站项目的源代码见[Cata的项目地址](https://github.com/jaylencheng/jaylencheng.github.io)。你可以遵照自由软件基金会发布的《GNU 通用公共许可证条款第三版》对代码进行修改和重新发布，或者(根据您的选择)用任何更新的版本。公布源码的目的是希望它有用，但没有任何担保。甚至没有适合特定目的的隐含的担保。更详细的情况请参阅[《GNU 通用公共许可证》](http://www.gnu.org/licenses/gpl.html)。而博客内容为原创内容，见本页[版权声明](https://jaylencheng.github.io/2099/01/01/About-Me-(Set-As-Top)/#%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8E)处进行必要标注。
 2. 本站中使用MathJax中的kramdown进行公式渲染，可在公式处右键查看公式内容，改变大小和语言，提取公式对应的html和latex代码等。
 3. 本站中的图床基于[CSDN](https://img-blog.csdnimg.cn/)和[GitHub图床](https://raw.githubusercontent.com/),后者在国内可能出现无法打开或打开较慢的情况，科学上网后可减轻此现象出现的频率。(因此，本站今后也尽量将图床移至站内，减少此类现象发生的可能。)
 4. 本站仍有博主在其他平台的链接，在主页面侧边栏介绍或每页最底下会有其他链接，希望能发掘更多的共同兴趣。
