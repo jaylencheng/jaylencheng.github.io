@@ -54,7 +54,8 @@ tags:                               #标签
 现存安卓版本中，为了在手机屏幕上尽量多的显示内容，博客浏览的目录插件被阉割，栏目以小任务栏的形式出现在右上角。
 
 由于iOS设备中开发App有严格的上架审核机制，暂不进行iOS设备的开发。iOS用户可用safari浏览器打开网址[https://jaylencheng.github.io](https://jaylencheng.github.io)后，按下图进行操作即可：
-[iOS设备中添加至主页的方法:右上角共享后，点击“添加到主屏幕”即可]({{ site.baseurl }}/fig/20051901.png)
+
+！[iOS设备中添加至主页的方法:右上角共享后，点击“添加到主屏幕”即可]({{ site.baseurl }}/fig/20051901.png)
 
 # 版权声明
 本站所有未注明出处的文章即原创文章，遵循 [CC 4.0 BY-SA](http://creativecommons.org/licenses/by-sa/4.0/) 版权协议.
