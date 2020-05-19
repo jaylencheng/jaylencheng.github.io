@@ -7,7 +7,7 @@ tags:                               #标签
 ---
 # About Me
 ## 我的名片
-![1](https://img-blog.csdnimg.cn/20191216200155246.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMDkwODU5,size_16,color_FFFFFF,t_70)
+![1]({{ site.baseurl }}/img/card.png)
 ## 影响我的句子
 1. 每个人都不是一座孤岛。一个人必须是这世上最坚固的岛屿，然后才能成为大陆的一部分。 ——海明威
 2. 也许是天生懦弱的关系，我对所有的喜悦都掺杂着不祥的预感。-——三岛由纪夫
