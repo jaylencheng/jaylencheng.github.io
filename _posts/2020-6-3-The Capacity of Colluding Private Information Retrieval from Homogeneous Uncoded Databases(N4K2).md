@@ -63,3 +63,4 @@ s.t. \quad & \alpha_1+\alpha_2+\alpha_3+\alpha_{4}+\alpha_{1,2}+\alpha_{2,3}+\al
 \end{align}$$
 
 the fractions are all easy according to TPIR scheme and memory sharing scheme. Every $\alpha_{1,2,3,4},\alpha_{1,2,3},\alpha_{1,2},\alpha_{1}$ sums are all achievable values.
+？
