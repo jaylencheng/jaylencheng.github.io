@@ -55,6 +55,7 @@ This indicates that the probability of a random sequence only depends on the dis
 $$
 H(Q,P_X)=-\sum_{a\in\mathcal{X}}Q(a)logP_X(a), \label{crossentr}
 $$
+
 And 
 
 $$
@@ -88,6 +89,7 @@ and noticing the Stirling approximation：
 $$
 n^n\sim n!e^n\to \frac{1}{n}lnn!\sim ln n-1,\quad n\to \infty
 $$
+
 We have:
 
 $$
@@ -121,11 +123,13 @@ We can simply calculate athe probability of any given type $\mathcal{T}_Q^n$ by 
 $$
 \frac{1}{n}logP_{X^n}(\mathcal{T}_Q^n)\\=\frac{1}{n}log[|\mathcal{T}_Q^n|P_{X^n}(x^n:x^n\in \mathcal{T}_Q^n)]\\\sim\frac{1}{n}log|\mathcal{T}_Q^n|+\frac{1}{n}logP_{X^n}(x^n:P_{x^n}=Q)\\=H(Q)-H(Q,P_X), \label{relativeentr}
 $$
+
 We denote 
 
 $$
 H(Q,P_X)-H(Q)=D(Q||P_X)=-\sum_{a\in\mathcal{X}}P_X(a)log\frac{P_X(a)}{Q(a)}=D(Q||P_X)\geq 0
 $$
+
 as the Kullback-Liebler Divergence (or relative entropy). To put it more specifically from  $\ref{specsize}$,
 
 $$
@@ -150,7 +154,7 @@ $$
 =\bigcup_{Q:\exists a\in \mathcal{X}, |Q(a)-P_{X}(a)|\geq\delta}\mathcal{T}_Q^n
 $$
 
-an <u>Atypical Set</u> . We choose $\delta_{\epsilon}$ to make $|H(Q)-H(P_X)|\leq \epsilon$ . We can find such a $\delta_{\epsilon}$ due to the continuity of function:
+an <u>Atypical Set</u>. We choose $\delta_{\epsilon}$ to make $|H(Q)-H(P_X)|\leq \epsilon$ . We can find such a $\delta_{\epsilon}$ due to the continuity of function:
 
 $$
 H(Q)=-\sum_{a\in\mathcal{X}}Q(a)logQ(a),\quad \\
@@ -235,7 +239,6 @@ exp(n(H(P_X)+\epsilon))\leq |\mathcal{T}_{[Q]_\delta}^n|\leq exp(n(H(P_X)+\epsil
 $$
 
 which is exponentially small conpared with the whole size $\binom{n+|\mathcal{X}|-1}{n}$.  Each of the points in the typical set is nearly uniformly distributed, i.e., 
-
 
 $$
 H(P)-\epsilon\leq H(Q)\leq H(P)+\epsilon
