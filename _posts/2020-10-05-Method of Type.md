@@ -62,7 +62,7 @@ $$
 Pr(X^n=x^n)=q^{-nH(Q,P)}
 $$
 
-Easy to see that if all the frequency of  $a\in\mathcal{X}$ on different $x^n$s are the same, the values of probability distribution of $X^n$ on point $x^n$s are the same. This allows us to divide the sample space $\mathcal{X}^n$ into different parts and each part has the same empirical distribution, and automatically uniformly distributed. Any part is determined only by $Q:|\mathcal{X}|\to \frac{[n]}{n}$.
+Easy to see that if all the frequency of  $a\in\mathcal{X}$ on different $x^n$s are the same, the values of probability distribution of $X^n$ on point $x^n$s are the same. This allows us to divide the sample space $\mathcal{X}^n$ into different parts and each part has the same empirical distribution, and automatically uniformly distributed. Any part is determined only by $Q: |\mathcal{X}|\to \frac{[n]}{n}$.
 
 $$
 \mathcal{T}_Q^n=\{x^n\in X^n|P_{x^n}=Q\}
@@ -102,9 +102,9 @@ $$
 H(Q)=H(Q,Q)=-\sum_{a\in\mathcal{X}}Q(a)logQ(a)
 $$
 
-as the entropy of a given distribution $Q$.
+as the entropy of a given distribution $Q$ .
 
-It is worth noticing that $\frac{1}{n}log|\mathcal{T}_Q^n|\sim H(Q)$ is a exponential approximation, which allows an error of a ploynomial times of the size. Specifically, for $\mathcal{T}_Q^n$ with $Q$ happens to be the distribution of $X$, i.e., $Q=P_X$, 
+It is worth noticing that $\frac{1}{n} \log|\mathcal{T}_Q^n|\sim H(Q)$ is an exponential approximation, which allows an error of a ploynomial times of the size. Specifically, for $\mathcal{T}_Q^n$ with $Q$ happens to be the distribution of $X$, i.e., $Q=P_X$, 
 
 $$
 \frac{1}{\binom{n+|\mathcal{X}|+1}{n}} \leq \sum_{x^n\in\mathcal{T}_Q^n}\prod_{i=1}^{n}P_{X}(x_i)=Q^n(\mathcal{T}_Q^n)\leq 1
@@ -136,7 +136,7 @@ $$
 \frac{q^{nD(Q||P_X)}}{\binom{n+|\mathcal{X}|+1}{n}}\leq P_{X^n}(\mathcal{T}_Q^n)=|\mathcal{T}_Q^n|P_{X^n}(x^n:x^n\in \mathcal{T}_Q^n)\leq q^{nD(Q||P_X)}
 $$
 
-The above shows that the difference between $H(Q)$ and $H(Q,P_X)$ (i.e., the difference of empirical distribution and real distribution) determines the probability of a certain type. (Compared to the size of a type, which is only determined by the empirical distribution). We can intuitively cosnsider $D(Q||P_X)$ as the "distance" between 2 distributions. The large distance of $Q$ and $P_X$, the less $P_{X^n}(\mathcal{T}_Q^n)$ will be. As a specific case when $P=Q$, $D(Q||P_X)=0$ and the probability gets maximum.
+The above shows that the difference between $H(Q)$ and $H(Q,P_X)$ (i.e., the difference of empirical distribution and real distribution) determines the probability of a certain type. (Compared to the size of a type, which is only determined by the empirical distribution). We can intuitively cosnsider $ D(Q||P_X) $ as the "distance" between 2 distributions. The large distance of $Q$ and $P_X$, the less $P_{X^n}(\mathcal{T}_Q^n)$ will be. As a specific case when $P=Q$, $D(Q||P_X)=0$ and the probability gets maximum.
 
 ## 6. Typical Set
 
