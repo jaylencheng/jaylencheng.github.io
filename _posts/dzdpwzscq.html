@@ -1,0 +1,508 @@
+<html>
+
+<head>
+  <title>大众点评文章生成器</title>
+  <meta http-equiv="content-type" content="txt/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="icon" href="data:image/ico;base64,aWNv">
+  <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/jQuery.print/1.6.0/jQuery.print.min.js"></script>
+</head>
+
+<body>
+  <div id="主体">
+    <div id="标题">大众点评文章生成器-乖乖特供版</div>
+    <div id="主题">
+      <span>主题</span>
+      <input></input>
+      <span>地点</span>
+      <input></input>
+      <button onclick="生成文章()">文字版</button>
+      <button onclick="生成手写()">手写版</button>
+      <button onclick="打印()" style="display: none;" id="print">打印</button>
+    </div>
+    <div id="文章"></div>
+    <div id="hand" style="display: none;"></div>
+  </div>
+  <div id="声明">
+    <p id="声明文字">请勿将生成的文章用于正规用途</p>
+    <p><a class="链接" href="声明.txt">声明</a></p>
+  </div>
+  <!-- <iframe id="asd"></iframe> -->
+  <div id="页脚">
+    <p>
+      网页版
+      <a class="链接" href="https://github.com/suulnnka/BullshitGenerator"><svg class="图标" viewBox="0 0 16 16"
+          version="1.1" aria-hidden="true">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg></a>
+      @<a class="链接" href="https://www.zhihu.com/people/su-lan-qia">suulnnka</a>
+    </p>
+    <p>
+      原版
+      <a class="链接" href="https://github.com/menzi11/BullshitGenerator"><svg class="图标" viewBox="0 0 16 16"
+          version="1.1" aria-hidden="true">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg></a>
+      @<a class="链接" href="https://www.zhihu.com/people/ke-meng-90">menzi11</a>
+    </p>
+    <p>
+      修改：手写版 by Pluto0x0
+      <a class="链接" href="https://github.com/pluto0x0/BullshitGenerator"><svg class="图标" viewBox="0 0 16 16"
+          version="1.1" aria-hidden="true">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg></a>
+      @<a class="链接" href="https://www.zhihu.com/people/pluto0x0">Pluto0x0</a>
+    </p>
+  </div>
+</body>
+
+</html>
+
+<script>
+  let _hmt = window._hmt || [];
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-BM8WXEWW3P');
+
+  function track(eventName, title, seed) {
+    gtag('event', eventName, { 'event_label': title, 'seed': seed, 'title_seed': title + '_' + seed });
+    _hmt.push(['_trackEvent', eventName, 'title', title]);
+    _hmt.push(['_trackEvent', eventName, 'title_seed', title + '_' + seed]);
+  }
+
+  window.Q = function (selector) {
+    return document.querySelector(selector);
+  }
+
+  function 获取网址参数(参数) {
+    return new URL(window.location.href).searchParams.get(参数)
+  }
+
+  let 论述 = [
+    '主题是一家很棒的餐厅， ',
+    '早就听说主题的氛围很好，今天终于到了这家店， ',
+    '主题是一家很独特的餐厅，装修十分精致， ',
+    '不愧是排行榜上有名的餐厅，已进入主题这家店真的感觉名不虚传。 ',
+    '主题这家店和其他店相比服务态度好了很多，因此就餐体验十分愉快。 ',
+    '主题，一家环境，菜品，客人和服务生水平都超高的店。十分推荐！。 ',
+    '进入主题这家餐厅之后，我才知道菜品原来也可以做的na那么高级！ ',
+    '走在路上偶然遇到的宝藏好店！主题这个餐厅绝对不亏！ ',
+    '作为南京的大学生，主题这家店我是真的没少来。 ',
+  ]
+
+  let 名人名言 = [
+    '“纤手搓来玉色匀，碧油煎出嫩黄深。夜来春睡知轻重，压扁佳人缠臂金”。正如诗人所描绘的一样，餐厅的气氛是一大特点。',
+    '长江绕郭知鱼美，好竹连山觉笋香。诚如此言，美食所带给我们的，并不只有味觉上的享受，更是一种心灵的慰藉。',
+    '《丽人行》中有"紫驼之峰出翠釜，水精之盘行素鳞；犀箸餍饫久未下，鸾刀缕切空纷纶；黄门飞鞚不动尘，御厨络绎送八珍"的诗句，即为"八珍"。店铺虽然不大，但食物精美，堪与“八珍”比拟，令人赞不绝口。',
+    '中国菜肴有八大菜系，每一种菜系都有无数的名菜，各有特色，让人垂涎欲滴。这家餐馆更令我找到了自己久违的味道。',
+    '当奶油恋上芝士，香浓的爱意沉浸在芝士的丝滑里，却因同根生而被命运阻隔，于是这份爱恋少了些许甜腻，多了一丝酸楚。幸好，有相思豆的铺撒，让原本凄凉的爱情多了无限温暖。',
+    '单是菜肴就已经鲜香无比，流连忘返了，口感丰富层次鲜明。搭配上一杯清甜的果香红茶，清新的口感，迷人的色泽、馥郁的水果香，马上让你心旷神怡，唇齿留香',
+    '正如老饕们经常说的，食物是犒劳精神的最佳保健品。这种食物尤然，吃在嘴里有一种幸福的味道',
+    '采撷各地的名菜佳肴，荟萃各国的别样风味，恍惚中就在觥筹交错间回味无穷。',
+    '厨师不仅仅是厨师，更是生活里最平易近人的哲人，我将做好的每一份菜，盛入生活的盘中，供我们尝尽酸甜苦辣麻，感受人生的真谛。',
+    '将快乐烘烤，让幸福的气息四溢，将如意翻炒，让美好的气味飘散，将开心的大餐摆满人生的餐桌。',
+    '快乐要爆炒，香气飘满周围的空间；烦恼得慢炖，轻松缓缓拥抱了惆怅；幸福像煲汤，滋味伴着时间越久越浓。',
+    '一双巧手演绎五彩斑斓，一把大勺爆炒酸甜苦辣，一脸热情无憾把青春挥洒，一顶高帽是对厨师的最高评价。',
+    '一刀一刀，将烦恼切碎；一铲一铲，将友情炒熟；一锅一锅，将忧愁炖烂；一勺一勺，将亲情搅匀；一碗一碗，将爱情端上；一盘一盘，将幸福盛出。',
+    '开心的锅铲，炒出甜蜜的滋味；悦心的调料，调出美满的味道；惬意的烹饪，烹出幸福的大餐。',
+    '油炸了一份开心美味果，慢炖了一锅幸福快乐汤，翻炒了一盘吉祥如意丝，凉伴了一盆好运富贵菜，摆了一桌美好人生大餐，',
+    '巧手烹调益寿糕，营养丰富健身康。高艺烹饪药膳粥，养生益体保健汤。赤橙黄绿青蓝紫，胜似花朵绽美丽。油盐酱醋调味品，色香味鲜美了你。',
+  ]
+
+  let 后面垫话 = [
+    '辣而不腻，味道一绝，质优价廉，7元一块，人气美食大力推荐，',
+    '山珍海味，美味佳肴在这家店的菜面前也不过如此而已…… ',
+    '在这里也想感谢一下厨师们，天天辛苦不喊累，投身厨房英雄无畏，白衣白帽多高贵，创造生活好美味，锅勺桶盆响叮铛，烟熏火烤不怕脏，杀鱼洗菜刮大肠，切鸡切鸭技术棒，节假日里他最忙，加班加点汗水淌。 ',
+    '佳肴美味有多种，家人品尝赞无数。酸甜苦辣味道全，人生百味在其中。 ',
+  ]
+
+  let 前面垫话 = [
+    '我一直很认同这样一个众所周知的段子',
+    '美食正如一切美好的事情一样，',
+    '我不禁感叹，',
+    '这么好的环境和氛围中，我不由得浮想联翩'
+  ]
+
+  let 初始主题 = [
+    '一天掉多少根头发',
+    '中午吃什么',
+    '学生会退会',
+    '好好学习',
+    '生活的意义',
+    '科学和人文谁更有意义'
+  ]
+
+  let 下取整 = Math.floor;
+
+  let 同余乘数 = 214013;
+  let 同余加数 = 2531011;
+  let 同余模 = Math.pow(2, 32);
+
+  let 随机种子 = 获取网址参数('随机种子') || 下取整(随便取一个数(0, 同余模, Math.random));
+
+  let 主题 = 获取网址参数('主题') || 随便取一句(初始主题)
+
+  Q('input').value = 主题;
+
+  // LCG https://en.wikipedia.org/wiki/Linear_congruential_generator
+  function 同余发生器() {
+    随机种子 = (随机种子 * 同余乘数 + 同余加数) % 同余模;
+    return 随机种子 / 同余模;
+  };
+
+  function 随便取一句(列表) {
+    let 坐标 = 下取整(同余发生器() * 列表.length);
+    return 列表[坐标];
+  }
+
+  function 随便取一个数(最小值 = 0, 最大值 = 100, 随机数函数 = 同余发生器) {
+    let 数字 = 随机数函数() * (最大值 - 最小值) + 最小值;
+    return 数字;
+  }
+
+  function 来点名人名言() {
+    let 名言 = 随便取一句(名人名言)
+    名言 = 名言.replace('曾经说过', 随便取一句(前面垫话))
+    名言 = 名言.replace('这不禁令我深思', 随便取一句(后面垫话))
+    return 名言
+  }
+
+  function 来点论述() {
+    let 句子 = 随便取一句(论述);
+    句子 = 句子.replace(RegExp('主题', 'g'), 主题);
+    return 句子;
+  }
+
+  function 增加段落(段落) {
+    if (段落[段落.length - 1] === ' ') {
+      段落 = 段落.slice(0, -2)
+    }
+    return '　　' + 段落 + '。 '
+  }
+
+  function 核心功能() {
+    主题 = Q('input').value
+    history.pushState({ url: window.location.href }, null, '?主题=' + 主题 + '&随机种子=' + 随机种子);
+    track('generator', 主题, 随机种子);
+    let 文章 = []
+    let 段落 = '';
+    let 文章长度 = 0;
+    while (文章长度 < 12000) {
+      let 随机数 = 随便取一个数();
+      if (随机数 < 5 && 段落.length > 200) {
+        段落 = 增加段落(段落);
+        文章.push(段落);
+        段落 = '';
+      } else if (随机数 < 20) {
+        let 句子 = 来点名人名言();
+        文章长度 = 文章长度 + 句子.length;
+        段落 = 段落 + 句子;
+      } else {
+        let 句子 = 来点论述();
+        文章长度 = 文章长度 + 句子.length;
+        段落 = 段落 + 句子;
+      }
+    }
+    段落 = 增加段落(段落);
+    文章.push(段落);
+
+    return 文章.join('');
+  }
+
+  function 生成文章() {
+    Q('#文章').innerHTML = 核心功能();
+    Q('#声明文字').style.display = 'block';
+    $('#hand').empty();
+    $('#hand').hide();
+    $('#print').hide();
+    $('#文章').show();
+  }
+
+  function 打印() {
+    $("#hand").print({ timeout: 10000/*, iframe: '#asd'*/});
+  }
+
+  function 生成手写() {
+    let s = 核心功能();
+    let box = $('#hand');
+    box.show();
+    box.empty();
+    $('#文章').empty();
+    $('#文章').hide();
+    for (var i in s) {
+      if (Math.random() < 0.06) {
+        box.append('<span>&#xFFE' + Math.floor(Math.random() * 4.0 + 6.0) + ';</span>');
+      }
+      let cur = $('<span>' + s[i] + '</span>');
+      if (Math.random() < 0.2) cur.addClass('r');
+      else if (Math.random() < 0.2) cur.addClass('l');
+      if (Math.random() < 0.2) cur.addClass('lg');
+      else if (Math.random() < 0.2) cur.addClass('sm');
+      if (Math.random() < 0.2) cur.addClass('up');
+      else if (Math.random() < 0.2) cur.addClass('dwm');
+      box.append(cur);
+    }
+    $('#print').show();
+  }
+
+  if (获取网址参数('主题')) {
+    生成文章();
+    track('shared', 主题, 随机种子);
+  }
+
+</script>
+<style>
+  @media screen and (max-width: 1024px) {
+    html {
+      font-size: 2vw;
+      color: #333333;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    #主体 {
+      border: 2px solid #333333;
+      margin: 6px;
+      padding: 6px;
+      background: #f8f8f8;
+    }
+
+    #标题 {
+      font-size: 3rem;
+      line-height: 3rem;
+      text-align: center;
+    }
+
+    #主题 {
+      text-align: center;
+      margin-top: 6px;
+      font-size: 0px;
+    }
+
+    #主题 span {
+      font-size: 2rem;
+      vertical-align: baseline;
+      margin-left: 6px;
+    }
+
+    #主题 input {
+      border: none;
+      border-bottom: #666666 2px solid;
+      padding: 1px 0 0 0;
+      margin: 0px 6px 0 6px;
+      vertical-align: baseline;
+      font-size: 2rem;
+      background: #f8f8f8;
+      color: #333333;
+      text-align: center;
+      min-width: 20%;
+    }
+
+    #主题 button {
+      border: 0;
+      padding: 3px 7px 3px 7px;
+      margin: 0;
+      vertical-align: top;
+      font-size: 1.4rem;
+      background: #454545;
+      color: #efefef;
+    }
+
+    #文章 div {
+      margin-top: 6px;
+      font-size: 2rem;
+      text-align: justify;
+    }
+
+    #声明 {
+      float: left;
+      margin: 0 0 0 6px;
+    }
+
+    #声明 p {
+      margin: 0 0 3px 3px;
+      font-size: 1.4rem;
+    }
+
+    #声明文字 {
+      display: none;
+    }
+
+    #页脚 {
+      margin: 6px;
+    }
+
+    #页脚 p {
+      margin: 3px;
+      font-size: 1.4rem;
+      text-align: right;
+    }
+
+    .链接 {
+      color: #666666;
+    }
+
+    .图标 {
+      height: 1rem;
+      width: 1rem;
+      vertical-align: top;
+      margin-top: 2px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    html {
+      font-size: 1.3vw;
+      color: #333333;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    #主体 {
+      border: 2px solid #333333;
+      margin: 20px;
+      padding: 20px;
+      background: #f8f8f8;
+    }
+
+    #标题 {
+      font-size: 1.9rem;
+      line-height: 1.9rem;
+      text-align: center;
+    }
+
+    #主题 {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0px;
+    }
+
+    #主题 span {
+      font-size: 1rem;
+      vertical-align: baseline;
+      margin-left: 20px;
+    }
+
+    #主题 input {
+      border: none;
+      border-bottom: #666666 2px solid;
+      padding: 1px 0 0 0;
+      margin: 0px 20px 0 20px;
+      vertical-align: baseline;
+      font-size: 1rem;
+      background: #f8f8f8;
+      color: #333333;
+      text-align: center;
+      min-width: 20%;
+    }
+
+    #主题 button {
+      border: 0;
+      padding: 5px 15px 5px 15px;
+      margin: 0;
+      vertical-align: top;
+      font-size: 0.75rem;
+      background: #454545;
+      color: #efefef;
+    }
+
+    #文章 div {
+      margin-top: 20px;
+      text-align: justify;
+    }
+
+    #声明 {
+      float: left;
+      margin: 0 0 0 20px;
+    }
+
+    #声明 p {
+      margin: 0 0 5px 5px;
+      font-size: 0.75rem;
+    }
+
+    #声明文字 {
+      display: none;
+    }
+
+    #页脚 {
+      margin: 20px;
+    }
+
+    #页脚 p {
+      margin: 5px;
+      font-size: 0.75rem;
+      text-align: right;
+    }
+
+    .链接 {
+      color: #666666;
+    }
+
+    #页脚 span {
+      padding: 2px 0 0 0;
+      vertical-align: baseline;
+    }
+
+    .图标 {
+      height: 0.7rem;
+      width: 0.7rem;
+      vertical-align: top;
+      margin-top: 4px;
+    }
+  }
+
+  /*----------*/
+
+  @font-face {
+    font-family: 'hand';
+    src: url('陈静的字完整版_魔改2.ttf');
+  }
+
+  #hand>span {
+    position: relative;
+    display: inline-block;
+    font-family: hand;
+    font-size: 1cm;
+  }
+
+  #hand>span.l {
+    transform: rotate(4.5deg);
+    -ms-transform: rotate(4.5deg);
+    -webkit-transform: rotate(4.5deg);
+  }
+
+  #hand>span.r {
+    transform: rotate(-4.5deg);
+    -ms-transform: rotate(-4.5deg);
+    -webkit-transform: rotate(-4.5deg);
+  }
+
+  #hand>span.lg {
+    font-size: 10.3mm;
+  }
+
+  #hand>span.sm {
+    font-size: 9.2mm;
+  }
+
+  #hand>span.up {
+    top: -2px;
+  }
+
+  #hand>span.dwm {
+    top: 2px;
+  }
+</style>
