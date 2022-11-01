@@ -12,7 +12,7 @@ tags:                               #标签
 
 
 # 1. Achievability
-We note the lower bound of storage constrained PIR with $\mu$ storage coefficient. We have:
+We note the lower bound of storage constrained PIR with $\mu$storage coefficient. We have:
 
 $$
 \begin{align}
@@ -33,7 +33,7 @@ s.t. \quad & \alpha_1+\alpha_2+\alpha_3+\alpha_{1,2}+\alpha_{2,3}+\alpha_{1,3}+\
 &\alpha_3+\alpha_{2,3}+\alpha_{1,3}+\alpha_{1,2,3} \leq \mu\\
 \end{align}$$
 
-the fractions are all easy according to TPIR scheme and memory sharing scheme. Every $\alpha_{1,2,3},\alpha_{1,2},\alpha_{1}$ sums are all achievable values. In fact we can figure out the coefficients in the following CONVERSE result:
+the fractions are all easy according to TPIR scheme and memory sharing scheme. Every $\alpha_{1,2,3},\alpha_{1,2},\alpha_{1}$sums are all achievable values. In fact we can figure out the coefficients in the following CONVERSE result:
 
 $$
 \begin{equation}
@@ -58,7 +58,7 @@ $$
 H(A_{[3]}^1|W_1)=&H(A_1^1,A_2^1|W_1)+H(A_3^1|A_1^1,A_2^1,W_1) 
 \end{align}$$
 
-by taking all possible permutation $(i,j,k)\sim(1,2,3)$ together,
+by taking all possible permutation $(i,j,k)\sim(1,2,3)$together,
 
 $$
 \begin{align}
