@@ -107,8 +107,8 @@ $$
 	The following 3 interpreters of convergence in probability is equivalent:
 
 * $X_n\stackrel{p}{\to}X$
-* $\forall \epsilon>0,\exists N\in\mathbb{N}_+,\forall n\geq N,\forall\delta>0, Pr\{|X_n-X|>\delta\}<\epsilon$.
-* $\forall \epsilon>0,\exists N\in\mathbb{N}_+,\forall n\geq N, Pr\{|X_n-X|>\epsilon\}<\epsilon $.
+* $\forall\epsilon>0,\exists N\in\mathbb{N}_+,\forall n\geq N,\forall\delta>0, Pr\{|X_n-X|>\delta\}<\epsilon$.
+* $\forall\epsilon>0,\exists N\in\mathbb{N}_+,\forall n\geq N, Pr\{|X_n-X|>\epsilon\}<\epsilon $.
 
 \#
 
