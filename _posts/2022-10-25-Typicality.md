@@ -241,8 +241,8 @@ which satisfies the weak LLN.
 **Theorem 3:**
 	(Kolmogorov's strong LLN):
 
-* $\bar{X}_n\stackrel{a.s.}{\to}\mu,\quad n\to\infty $
-* when $\{X_k\}_{k\in\mathbb{N}} $are not i.i.d, then $\bar{X}_n-E[\bar{X}_n]\stackrel{a.s.}{\to} $, provided that $\sum_{k=1}^{\infty} \frac{1}{k^2}Var(X_k)<\infty $and $\forall k\in\mathbb{N}, X_k $has finite second moment.
+* $\bar{X}_n\stackrel{a.s.}{\to}\mu,\quad n\to\infty$
+* when $\{X_k\}_{k\in\mathbb{N}}$ are not i.i.d, then $\bar{X}_n-E[\bar{X}_n]\stackrel{a.s.}{\to}$, provided that $\sum_{k=1}^{\infty}\frac{1}{k^2}Var(X_k)<\infty$and $\forall k\in\mathbb{N}, X_k$has finite second moment.
 
 \#
 
