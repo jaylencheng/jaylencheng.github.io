@@ -107,8 +107,8 @@ $$
 	The following 3 interpreters of convergence in probability is equivalent:
 
 * $X_n\stackrel{p}{\to}X$
-* $\forall \epsilon>0,\exists N\in\mathbb{N}_+,\forall n\geq N,\forall\delta>0, Pr\{|X_n-X|>\delta\}< \epsilon$.
-* $\forall \epsilon>0,\exists N\in\mathbb{N}_+,\forall n\geq N, Pr\{|X_n-X|>\epsilon\}< \epsilon $.
+* $\forall \epsilon>0,\exists N\in\mathbb{N}_+,\forall n\geq N,\forall\delta>0, Pr\{|X_n-X|>\delta\}<\epsilon$.
+* $\forall \epsilon>0,\exists N\in\mathbb{N}_+,\forall n\geq N, Pr\{|X_n-X|>\epsilon\}<\epsilon $.
 
 \#
 
@@ -116,7 +116,7 @@ $$
 $1\iff 2 $by the definition of limitation, $2\to 3 $by letting $\delta=\epsilon $. We prove $3\to 2 $. To prove 2 holds $\forall\delta>0 $, we have the following 3 cases:
 
 * $\delta=\epsilon $. From 3 we get 2 immediately.
-* $\delta<\epsilon $. As $\delta>0 $, by 3 $\exists N\in\mathbb{N}_+,\forall n\geq N, Pr\{|X_n-X|>\delta\}< \delta<\epsilon $.
+* $\delta<\epsilon $. As $\delta>0 $, by 3 $\exists N\in\mathbb{N}_+,\forall n\geq N, Pr\{|X_n-X|>\delta\}<\delta<\epsilon $.
 * $\delta>\epsilon $. Then $\exists N\in\mathbb{N}_+,\forall n\geq N, Pr\{|X_n-X|>\delta\}<Pr\{|X_n-X|>\epsilon\}<\epsilon $.
 
 So $2\iff 3 $.
@@ -137,7 +137,6 @@ or equivalently,
 
 $$
 \begin{align}
-
 		 P\left(\{\omega\in\Omega:\lim\limits_{n\to\infty}X_n(\omega)=X(\omega)\}\right)=1\\
 		\forall \epsilon>0, P\left( \limsup_{n\to\infty}\{\omega\in\Omega:|X_n(\omega)-X(\omega)|>\epsilon \}  \right)=0
 	\end{align}
