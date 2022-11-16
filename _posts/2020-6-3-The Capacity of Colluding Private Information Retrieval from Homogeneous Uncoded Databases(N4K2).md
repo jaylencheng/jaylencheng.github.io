@@ -32,7 +32,7 @@ $$
 =&6L+3H(W_k)+\sum_{\mathcal{B}\subseteq [4],|\mathcal{B}|=2}H(W_k|Z_{\mathcal{B}})\\
 \end{align}$$
 
-we take the realization of k by $k=1$ and $k=2$, we have:
+we take the realization of k by $k=1$and $k=2$, we have:
 
 $$
 \begin{align}
@@ -42,7 +42,7 @@ $$
 \end{align}$$
 
 # 2.Achievability
-We note the lower bound of storage constrained PIR with $\mu$ storage coefficient. We have:
+We note the lower bound of storage constrained PIR with $\mu$storage coefficient. We have:
 
 $$
 \begin{align}
@@ -62,5 +62,5 @@ s.t. \quad & \alpha_1+\alpha_2+\alpha_3+\alpha_{4}+\alpha_{1,2}+\alpha_{2,3}+\al
 &\alpha_3+\alpha_{2,3}+\alpha_{1,3}+\alpha_{4,3}+\alpha_{1,2,3}+\alpha_{4,2,3}+\alpha_{1,4,3} \leq \mu
 \end{align}$$
 
-the fractions are all easy according to TPIR scheme and memory sharing scheme. Every $\alpha_{1,2,3,4},\alpha_{1,2,3},\alpha_{1,2},\alpha_{1}$ sums are all achievable values.
+the fractions are all easy according to TPIR scheme and memory sharing scheme. Every $\alpha_{1,2,3,4},\alpha_{1,2,3},\alpha_{1,2},\alpha_{1}$sums are all achievable values.
 。。
